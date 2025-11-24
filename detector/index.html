@@ -1,0 +1,123 @@
+<!-- Created by ZQ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"/>
+	<title>Browser Details</title>
+	<!-- Google Fonts -->
+	<link
+	  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+	  rel="stylesheet"/>
+  </head>
+
+  <body>
+	<div class="wrapper">
+	  <div id="container">
+		Browser Details: <span id="browserDetails"> </span>
+		<br />
+		OS: <span id="osDetails"></span>
+	  </div>
+	  <a href="https://github.com/urbantechgirl" target="_blank">My GITHUB</a>
+	</div>
+    <style>
+    * {
+		padding: 0;
+		margin: 0;
+		-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+                -moz-box-sizing: padding-box;
+		font-family: "Poppins", sans-serif;
+	  }
+	  body {
+	
+        background-color: bisque;
+	  }
+	  .wrapper {
+		width: 90vw;
+		max-width: 600px;
+		position: absolute;
+		-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+	  }
+	  #container {
+		background-color: #ffffff;
+		position: relative;
+		padding: 40px 20px;
+		border-radius: 5px;
+		font-size: 7vmin;
+		color: #051a32;
+		font-weight: 550;
+		line-height: 1.7em;
+		text-align: center;
+		-webkit-box-shadow: 0 20px 50px rgba(5, 26, 50, 0.18);
+				box-shadow: 0 20px 50px rgba(5, 26, 50, 0.18);
+	  }
+	  a {
+		background-color: #33336181;
+		display: block;
+		width: 100%;
+		padding: 15px 0;
+		margin-top: 30px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 5px;
+		color: #051a32;
+		font-size: 20px;
+		-webkit-box-shadow: 0 20px 50px rgba(5, 26, 50, 0.18);
+				box-shadow: 0 20px 50px rgba(5, 26, 50, 0.18);
+		font-weight: 600;
+	  }
+	  #container span {
+		font-weight: 400;
+		color:#000000;
+	  }
+    </style>
+	<script>
+     let browserDetailsRef = document.getElementById("browserDetails");
+	  let osDetailsRef = document.getElementById("osDetails");
+	  var browserList = [
+		{ name: "Firefox", value: "Firefox" },
+		{ name: "Opera", value: "OPR" },
+		{ name: "Edge", value: "Edg" },
+		{ name: "Chrome", value: "Chrome" },
+		{ name: "Safari", value: "Safari" },
+	  ];
+	  var os = [
+		{ name: "Android", value: "Android" },
+		{ name: "iPhone", value: "iPhone" },
+		{ name: "iPad", value: "iPad" },
+		{ name: "Macintosh", value: "Mac" },
+		{ name: "Linux", value: "Linux" },
+		{ name: "Windows", value: "Win" },
+	  ];
+	  let browserChecker = () => {
+		/*
+		userAgent contains Browser Details and OS details but we need to seperate them
+	*/
+		let userDetails = navigator.userAgent;
+		for (let i in browserList) {
+		  //check if the string contains any value from the array
+		  if (userDetails.includes(browserList[i].value)) {
+			//extract browser name and version from the string
+			browserDetailsRef.innerHTML =
+			  browserList[i].name || "Unknown Browser";
+			break;
+		  }
+		}
+		for (let i in os) {
+		  //check if the string contains any value from the object
+		  if (userDetails.includes(os[i].value)) {
+			//display name of OS from the object
+			osDetailsRef.innerHTML = os[i].name;
+			break;
+		  }
+		}
+	  };
+	  window.onload = browserChecker();
+    </script>
+  </body>
+</html>

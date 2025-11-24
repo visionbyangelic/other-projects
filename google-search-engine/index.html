@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		
+		<title>Google</title>
+		<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+		<style>
+		body {
+	margin:0;
+	text-align:-webkit-center;
+	font-family:"Arial";
+}
+*{
+	box-sizing:border-box ;
+	outline:none;
+}
+.card{
+	display:inline;
+	color:#555;
+}
+a{
+	text-decoration:none;
+	color: #555 ;
+}
+hr{
+	color:#ccc;
+	border:1px solid #ccc;
+}
+.search{
+	background-color:#fff;
+	border: 1px solid #bbb;
+	padding:10px;
+	border-radius:50px;
+	color:#000;
+	outline:none;
+	width:80%;
+	border-bottom-right-radius : 0px;
+	border-top-right-radius : 0px;
+	background-image:url(http://simpleicon.com/wp-content/uploads/mic-1.png) ;
+	background-position:center right 10px;
+	background-size: 20px;
+	background-repeat: no-repeat ;
+	opacity:0.5;
+}
+footer{
+	background-color:#eee;
+	color:#999;
+}
+.button{
+	border: 1px solid #aaa;
+	background: #f5f5f5;
+	color:#666;
+	font-size:15px;
+	padding:5px;
+	margin:0;
+	margin-top:-10px;
+	border-radius:2px;
+}
+.nav{
+	overflow: hidden;
+  background-color: rgba(0,0,0,0.0);
+  
+  width:100%;
+  z-index:1;
+}
+th{
+	font-weight:lighter ;
+	font-size:12px;
+}
+.nav span {
+  float: left;
+  color: #555;
+  text-align: center;
+  padding: 5px 7px;c
+  text-decoration: none;
+  margin:5px;
+  font-size: 15px;
+  }
+ .src{
+ margin:0;
+	 background-color: #758aea ;
+	 padding:11px;
+	 border:none;
+	 color:white;
+	 margin-left:-5px;
+	 padding-left:13px;
+	 
+	 border-bottom-right-radius : 50px;
+	border-top-right-radius : 50px;
+   
+ }
+</style>
+
+	</head>
+	<body>
+	<span class="nav">
+	<span>
+		<i class="fa fa-bars"></i>
+		</span>
+		<span style="border-bottom: 2px solid #758aea ;color: #758aea ">
+			ALL
+		</span>
+		<span>
+		  <a href="https://www.google.com/webhp?sa=X&output=search&tbm=isch&tbo=u&ved=0ahUKEwiQ28ju8JzhAhXRW3wKHW8AC7UQ0tQDCAwoAQ">IMAGES</a>  
+		</span>
+	  <span style="float: right">
+		 <a href="https://accounts.google.com" class="button">Sign In</a>
+		</span>
+		<span style="float: right">
+			<i style="font-size: 20px;" class="fas fa-th"></i>
+		</span>
+   
+	</span>
+	<br />
+	<br />
+	<br />
+	<br />
+   <br />
+	<br />
+		<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" style="width: 200px">
+		<br />
+		
+		<br />
+		<input class="search" id="main" placeholder="" />
+		<button class="src" onclick="search()"> <i class="fas fa-search"></i> </button>
+		<br />
+		<br />
+		<div>Google offered in:</div>
+		<table cellspacing="15px">
+		<tr>
+			<th>
+				
+
+		 <a href="https://www.google.com/setprefs?sig=0_a2q__8y0tZEbUI7HksJJWcWlCv8%3D&hl=ha&source=homepage&sa=X&ved=0ahUKEwjFsZWtv633AhWnzIUKHfv2AoMQ2ZgBCCA">Hausa</a>
+		</div>
+			</th>
+			<th>
+					
+		 <a href="https://www.google.com/setprefs?sig=0_a2q__8y0tZEbUI7HksJJWcWlCv8%3D&hl=ig&source=homepage&sa=X&ved=0ahUKEwjFsZWtv633AhWnzIUKHfv2AoMQ2ZgBCCE">Igbo</a>
+		</div>
+			</th>
+			<th>
+					 
+		 <a href="https://www.google.com/setprefs?sig=0_a2q__8y0tZEbUI7HksJJWcWlCv8%3D&hl=yo&source=homepage&sa=X&ved=0ahUKEwjFsZWtv633AhWnzIUKHfv2AoMQ2ZgBCCI">Èdè Yorùbá</a>
+		</div>
+			</th>
+			<th>
+					 
+		 <a href="https://www.google.com/setprefs?sig=0_a2q__8y0tZEbUI7HksJJWcWlCv8%3D&hl=pcm&source=homepage&sa=X&ved=0ahUKEwjFsZWtv633AhWnzIUKHfv2AoMQ2ZgBCCM">"Nigerian Pidgin</a>
+		</div>
+			</th>
+			</tr>
+		</table>
+	
+   
+		<br />
+		<br />
+		<br />
+		<br />
+	<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br /> 
+		<footer>
+	 <br />
+			
+		 
+		 <br />
+		 <p  style="display:inline;">
+			 Made by 
+			<a href="https://twitter.com/urbantechgirl?s=21&t=ztM7FEBOBLe_RpyHnuIPWQ"> <b>ZQQ</b> </a>
+		 </p>
+		 <br />
+		 <br />
+		 <br />
+		 <br />
+		</footer>
+		<a style="display:none;" target="_blank" href="#" id="a"></a>
+		<script>
+		function search(){
+  var x = document.getElementById("main").value;
+  var y = x.replace(/[\s]/,"+");
+  var a = document.getElementById("a");
+  var z = "https://www.google.com/search?q="+y;
+  a.href=z;
+  a.click();
+}
+</script>
+	</body>
+</html>
